@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet/less" type="text/css" href="../styles/about.less" />
-    <title>Wire - Sobre</title>
-  </head>
-  <body>
-    <div class="about-title__container">
-      <h1>Sobre</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet/less" type="text/css" href="../styles/about.less" />
+  <title>Wire - Sobre</title>
+</head>
+
+<body>
+  <header class="home-header__container">
+    <div class="home-header__content">
+      <div>
+        <img src="./assets/logodemovelli.svg" alt="Logo Demovelli" />
+      </div>
+      <nav class="home-header__nav">
+
+        <section class="menu">
+          <input type="checkbox" name="hamburger" id="menu__toggle" />
+          <label for="menu__toggle" class="hamburger-button">
+            <span class="hamburger-lines"></span>
+          </label>
+
+          <ul class="menu__box">
+            <div>
+              <img src="./assets/logodemovelli-white.svg" alt="Logo Demovelli" />
+            </div>
+            <li class="menu__item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/about.html">A Demovélli</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/underMeasure.html">Sob Medida</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/office.html">Linha Office</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/contact.html">Contato</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/less"></script>
-  </body>
+  </header>
+  <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</body>
+
 </html>
