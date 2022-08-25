@@ -399,12 +399,13 @@ body {
         fill: #ffe5ea;
       }
 
-      p {
+      a {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 159.5%;
+        text-decoration: none;
 
         color: #ffe5ea;
       }
@@ -1074,6 +1075,12 @@ body {
   }
 }
 
+.mobile-display-none {
+  @media screen and (max-width: 1080px) {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .about-header__content {
     padding: 0 38px !important;
@@ -1090,6 +1097,10 @@ body {
   }
   .about-main__info {
     width: 100%;
+  }
+
+  .footer-content {
+    padding: 90px 38px !important;
   }
 }
 
@@ -1437,7 +1448,6 @@ body {
     .text-container {
       width: 100%;
       h1 {
-        width: 343px;
         height: 47px;
 
         font-family: 'Poppins';
