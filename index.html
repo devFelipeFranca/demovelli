@@ -1,370 +1,541 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet/less" type="text/css" href="./styles/home.less" />
+    <title>Wire - Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Poppins:wght@400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet/less" type="text/css" href="./styles/home.less" />
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <title>Wire - Home</title>
-</head>
+  <body>
+    <header class="home-header__container">
+      <div class="home-header__content">
+        <div>
+          <img src="./assets/logodemovelli.svg" alt="Logo Demovelli" />
+        </div>
+        <nav class="home-header__nav">
+          <section class="menu">
+            <input type="checkbox" name="hamburger" id="menu__toggle" />
+            <label for="menu__toggle" class="hamburger-button">
+              <span class="hamburger-lines"></span>
+            </label>
 
-<body>
-  <header class="home-header__container">
-    <div class="home-header__content">
-      <div>
-        <img src="./assets/logodemovelli.svg" alt="Logo Demovelli" />
+            <ul class="menu__box">
+              <div>
+                <img
+                  src="./assets/logodemovelli-white.svg"
+                  alt="Logo Demovelli"
+                />
+              </div>
+              <li class="menu__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="./pages/about.html">A Demovélli</a>
+              </li>
+              <li class="menu__item">
+                <a href="./pages/underMeasure.html">Sob Medida</a>
+              </li>
+              <li class="menu__item">
+                <a href="./pages/office.html">Linha Office</a>
+              </li>
+              <li class="menu__item">
+                <a href="./pages/contact.html">Contato</a>
+              </li>
+            </ul>
+          </section>
+        </nav>
       </div>
-      <nav class="home-header__nav">
-
-        <section class="menu">
-          <input type="checkbox" name="hamburger" id="menu__toggle" />
-          <label for="menu__toggle" class="hamburger-button">
-            <span class="hamburger-lines"></span>
-          </label>
-
-          <ul class="menu__box">
-            <div>
-              <img src="./assets/logodemovelli-white.svg" alt="Logo Demovelli" />
-            </div>
-            <li class="menu__item">
-              <a href="./index.html">Home</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/about.html">A Demovélli</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/underMeasure.html">Sob Medida</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/office.html">Linha Office</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/contact.html">Contato</a>
-            </li>
-          </ul>
-        </section>
-      </nav>
-    </div>
-  </header>
-  <main class="home-main-container">
-    <div class="home-main__content">
-      <section class="home-main__title">
-        <div class="home-main__info">
-          <div class="main-info__title-container">
-            <h1>Elegância e qualidade que você merece!</h1>
-            <p class="main-info__description">
-              Móveis com acabamento sofisticado e materiais de qualidade não precisam
-              ser apenas um sonho.</p>
-          </div>
-          <div class="main-info__links">
-            <a class="button" href="./pages/underMeasure.html">Quero conhecer os produtos Demovélli</a>
-            <a href="./pages/about.html" class="home-main__button">Sobre a Demovélli</a>
-          </div>
-          <div class="main-info__qualities">
-            <div class="main-info__card">
-              <img src="./assets/factory.svg" alt="Seta para baixo" />
-              <p>Móveis direto da fábrica
+    </header>
+    <main class="home-main-container">
+      <div class="home-main__content">
+        <section class="home-main__title">
+          <div class="home-main__info">
+            <div class="main-info__title-container">
+              <h1>Elegância e qualidade que você merece!</h1>
+              <p class="main-info__description">
+                Móveis com acabamento sofisticado e materiais de qualidade não
+                precisam ser apenas um sonho.
               </p>
             </div>
-            <div class="main-info__card">
-              <img src="./assets/furniture.png" alt="Seta para baixo" />
-              <p>Ambientes sob medida</p>
+            <div class="main-info__links">
+              <a class="button" href="./pages/underMeasure.html"
+                >Quero conhecer os produtos Demovélli</a
+              >
+              <a href="./pages/about.html" class="home-main__button"
+                >Sobre a Demovélli</a
+              >
             </div>
-            <div class="main-info__card">
-              <img src="./assets/delivery.svg" alt="Seta para baixo" />
-              <p>Entrega e montagem própria</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel js-flickity">
-          <div class="carousel-cell">
-            <img src="./assets/images/main-carousel1.png" alt="carousel image">
-          </div>
-          <div class="carousel-cell">
-            <img src="./assets/images/main-carousel5.png" alt="carousel image">
-          </div>
-          <div class="carousel-cell">
-            <img src="./assets/images/main-carousel3.png" alt="carousel image">
-          </div>
-          <div class="carousel-cell">
-            <img src="./assets/images/main-carousel4.png" alt="carousel image">
-          </div>
-        </div>
-      </section>
-      <section class="home-main__2">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div>
-          <h2>
-            Novas formas,
-            Novas possibilidades
-          </h2>
-          <p>
-            Um ambiente para chamar de seu. Através da qualidade dos produtos e personalização de ambientes, a Demovélli
-            trabalha
-            para a realização do sonho do ambiente perfeito e, além disso, com a satisfação de que você possa usufruir e
-            viver esse
-            sonho por muitos anos.
-          </p>
-        </div>
-        <ul class="reverse">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
-      <section class="home-main__3">
-        <div class="main-3__pictures">
-          <img src="./assets/main-3.svg" alt="Imagem de um ambiente">
-          <img src="./assets/main-3-2.svg" alt="Imagem de um ambiente">
-        </div>
-        <div class="main-3__text">
-          <h2>
-            Um ambiente desenvolvido especialmente para você
-          </h2>
-          <p>
-            Com a linha sob medida da Demovélli, os móveis são projetados para que você possa otimizar o espaço do seu
-            ambiente.
-            Pode ser uma linha moderna ou atemporal, o objetivo sempre será garantir um espaço clean, organizado e
-            agradável.
-          </p>
-          <a class="button" href="./pages/underMeasure.html">Saber mais sobre móveis sob medida</a>
-        </div>
-        <div class="main-3__squares">
-          <svg width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="72.5" height="72.5" fill="#FFE5EA" />
-            <rect x="72.5" y="72.5" width="72.5" height="72.5" fill="#FFE5EA" />
-          </svg>
-        </div>
-      </section>
-      <section class="home-main__4">
-        <div class="main-4__infos">
-          <h2>
-            Praticidade e qualidade em todo lugar
-          </h2>
-          <p>
-            Com atendimento no Rio Grande do Sul e Santa Catarina, as linhas de escritório da Demovélli encantam pela
-            praticidade e
-            acabamento perfeito.
-          </p>
-        </div>
-        <div class="main-4__images">
-          <div>
-            <img class="main-4__image-desktop" src="./assets/images/main-4-1.png" alt="Imagem de um ambiente">
-            <img class="main-4__image-mobile" src="./assets/images/main-4-mobile-1.png" alt="Imagem de um ambiente">
-            <img class="image-line" src="./assets/images/vegas.png" alt="linha Vegas">
-            <span class="main-4__overlay"></span>
-          </div>
-          <div>
-            <img class="main-4__image-desktop" src="./assets/images/main-4-2.png" alt="Imagem de um ambiente">
-            <img class="main-4__image-mobile" src="./assets/images/main-4-mobile-2.png" alt="Imagem de um ambiente">
-            <img class="image-line" src="./assets/images/style.png" alt="linha Style">
-            <span class="main-4__overlay"></span>
-          </div>
-          <div>
-            <img class="main-4__image-desktop" src="./assets/images/main-4-3.png" alt="Imagem de um ambiente">
-            <img class="main-4__image-mobile" src="./assets/images/main-4-mobile-3.png" alt="Imagem de um ambiente">
-            <img class="image-line" src="./assets/images/smart.png" alt="linha smart">
-            <span class="main-4__overlay"></span>
-          </div>
-          <div>
-            <img class="main-4__image-desktop" src="./assets/images/main-4-4.png" alt="Imagem de um ambiente">
-            <img class="main-4__image-mobile" src="./assets/images/main-4-mobile-4.png" alt="Imagem de um ambiente">
-            <img class="image-line" src="./assets/images/painel.png" alt="linha painel">
-            <span class="main-4__overlay"></span>
-          </div>
-          <div>
-            <img class="main-4__image-desktop" src="./assets/images/main-4-5.png" alt="Imagem de um ambiente">
-            <img class="main-4__image-mobile" src="./assets/images/main-4-mobile-5.png" alt="Imagem de um ambiente">
-            <img class="image-line" src="./assets/images/domo.png" alt="linha domo">
-            <span class="main-4__overlay"></span>
-          </div>
-        </div>
-        <div class="main-4__links">
-          <a class="button" href="./pages/office.html">Conhecer as linhas office</a>
-          <a href="#">Baixar catálogo</a>
-        </div>
-      </section>
-      <section class="home-main__5">
-        <div class="main-5__squares-left">
-          <svg width="123" height="177" viewBox="0 0 123 177" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="64" width="59" height="59" fill="#933748" />
-            <rect y="59" width="59" height="59" fill="#9F394B" />
-            <rect x="59" y="118" width="59" height="59" fill="#AB3B4F" />
-          </svg>
-        </div>
-        <div class="main-5__squares-top">
-          <svg width="237" height="77" viewBox="0 0 237 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="237" y="0.138916" width="38.1986" height="48" transform="rotate(90 237 0.138916)" fill="#863644" />
-            <rect x="189" y="37.9669" width="38.1986" height="48" transform="rotate(90 189 37.9669)" fill="#933748" />
-            <rect x="141" y="0.138947" width="38.1986" height="48" transform="rotate(90 141 0.138947)" fill="#9F394B" />
-            <rect x="93" y="38.3376" width="38.1986" height="48" transform="rotate(90 93 38.3376)" fill="#AB3B4F" />
-            <rect x="45" y="0.138947" width="38.1986" height="48" transform="rotate(90 45 0.138947)" fill="#B93C53" />
-          </svg>
-        </div>
-        <h2>
-          Sonhos não envelhecem
-        </h2>
-        <div class="main-5__content">
-          <div class="main-5__image"></div>
-          <a href="./pages/underMeasure.html" class="button">Quero um ambiente do meu jeito!
-          </a>
-        </div>
-        <div class="main-5__squares-right">
-          <svg width="59" height="177" viewBox="0 0 59 177" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="59" y="177" width="59" height="59" transform="rotate(-180 59 177)" fill="#933748" />
-            <rect x="59" y="118" width="59" height="59" transform="rotate(-180 59 118)" fill="#9F394B" />
-            <rect x="59" y="59" width="59" height="59" transform="rotate(-180 59 59)" fill="#AB3B4F" />
-          </svg>
-        </div>
-      </section>
-      <section class="home-main__6">
-        <div class="main-6__infos">
-          <h2>
-            Nós somos uma fábrica de sonhos
-          </h2>
-          <p>
-            Desde 2002, a nossa missão é desenvolver ambientes agradáveis, que superem as expectativas dos nossos
-            clientes. Com
-            trabalho e competência, transformamos sonhos em ambientes que se encaixam perfeitamente no seu espaço.
-          </p>
-
-          <a class="button" href="#">Saber mais sobre a Demovélli <img src="./assets/Right.svg"> </a>
-        </div>
-        <div class="main-6__images">
-          <div class="main-6__factory">
-            <img src="./assets/fabrica.svg" alt="Imagem da fabrica">
-            <a class="button-factory" href="#">
-              Fábrica Demovélli
-            </a>
-          </div>
-          <div class="main-6__factory-cards">
-            <div class="factory-card">
-              <div>
-                <span></span>
-                <h3>4000+</h3>
+            <div class="main-info__qualities">
+              <div class="main-info__card">
+                <img src="./assets/factory.svg" alt="Seta para baixo" />
+                <p>Móveis direto da fábrica</p>
               </div>
-              <p>Sonhos realizados</p>
-            </div>
-            <div class="factory-card">
-              <div>
-                <span></span>
-                <h3>1000+</h3>
+              <div class="main-info__card">
+                <img src="./assets/furniture.png" alt="Seta para baixo" />
+                <p>Ambientes sob medida</p>
               </div>
-              <p>peças fabricadas no mês</p>
-            </div>
-            <div class="factory-card">
-              <div>
-                <span></span>
-                <h3>150+</h3>
+              <div class="main-info__card">
+                <img src="./assets/delivery.svg" alt="Seta para baixo" />
+                <p>Entrega e montagem própria</p>
               </div>
-              <p>representantes em RS e SC</p>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="home-main__7">
-        <div class="main-7__card">
-          <img src="./assets/demovelli-card.svg" alt="card demovelli">
-        </div>
-        <div class="main-7__infos">
-          <h2>
-            Baixe agora nosso catálogo!
-          </h2>
-          <p>
-            Clique e baixe o nosso catálogo completo!
-          </p>
-          <a class="button" href="#">Quero baixar o catálogo <img src="./assets/Right.svg"></a>
-        </div>
-        <div class="squares">
-          <img src="./assets/mian-7-squares.svg" alt="card demovelli">
-        </div>
-      </section>
-    </div>
-  </main>
-  <footer class="home-footer__container">
-    <div class="footer-content">
-      <div>
-        <img src="./assets/logodemovelli-white.svg" />
-      </div>
-      <div class="footer-content__center">
-        <section class="footer-content__social">
-          <div class="footer-content__about mobile-display-none">
-            <img src="./assets/map.svg" />
-            <div>
-              <p>A Demovélli fica em Catuípe</p>
-              <span>ERS-342 km 96, Pavilhão 2</span>
+          <div class="carousel js-flickity">
+            <div class="carousel-cell">
+              <img
+                src="./assets/images/main-carousel1.png"
+                alt="carousel image"
+              />
             </div>
-          </div>
-          <div class="footer-content__social-item">
-            <img src="./assets/facebook.svg" />
-            <a href="https://www.facebook.com/watch/demovelli/" target="_blank">/Demovelli</a>
-          </div>
-          <div class="footer-content__social-item">
-            <img src="./assets/instagram.svg" />
-            <a href="https://www.instagram.com/demovelli/?hl=pt" target="_blank">@Demovelli</a>
-          </div>
-          <div class="footer-content__social-item">
-            <img src="./assets/whatsapp.svg" />
-            <a href="https://linktr.ee/demovelli" target="_blank">/Demovelli</a>
+            <div class="carousel-cell">
+              <img
+                src="./assets/images/main-carousel5.png"
+                alt="carousel image"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                src="./assets/images/main-carousel3.png"
+                alt="carousel image"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                src="./assets/images/main-carousel4.png"
+                alt="carousel image"
+              />
+            </div>
           </div>
         </section>
-        <div class="footer-content__map">
-          <iframe width="100%" height="100%"
-            src="https://maps.google.com/maps?q=28%C2%B015'27.9%22S%2054%C2%B000'05.8%22W&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
-        </div>
-      </div>
-      <section class="footer-content__contact">
-        <div class="footer-content__about">
-          <img src="./assets/sac.svg" />
+        <section class="home-main__2">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
           <div>
-            <p>SAC: 0800.700.6522</p>
-            <span>sac@demovelli.com.br</span>
+            <h2>Novas formas, Novas possibilidades</h2>
+            <p>
+              Um ambiente para chamar de seu. Através da qualidade dos produtos
+              e personalização de ambientes, a Demovélli trabalha para a
+              realização do sonho do ambiente perfeito e, além disso, com a
+              satisfação de que você possa usufruir e viver esse sonho por
+              muitos anos.
+            </p>
           </div>
-        </div>
-        <div class="footer-content__about">
-          <img src="./assets/phone.svg" />
-          <div>
-            <p>Fábrica Demovélli</p>
-            <span>(55)3333-5555</span>
+          <ul class="reverse">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+        <section class="home-main__3">
+          <div class="main-3__pictures">
+            <img src="./assets/main-3.svg" alt="Imagem de um ambiente" />
+            <img src="./assets/main-3-2.svg" alt="Imagem de um ambiente" />
           </div>
-        </div>
-        <div class="footer-content__about">
-          <img src="./assets/map.svg" />
-          <div>
-            <p>A Demovélli fica em Panambi</p>
-            <span>RS 404- km 04 - Distrito Industrial</span>
+          <div class="main-3__text">
+            <h2>Um ambiente desenvolvido especialmente para você</h2>
+            <p>
+              Com a linha sob medida da Demovélli, os móveis são projetados para
+              que você possa otimizar o espaço do seu ambiente. Pode ser uma
+              linha moderna ou atemporal, o objetivo sempre será garantir um
+              espaço clean, organizado e agradável.
+            </p>
+            <a class="button" href="./pages/underMeasure.html"
+              >Saber mais sobre móveis sob medida</a
+            >
           </div>
-        </div>
-      </section>
-      <div class="footer-content__botton">
-        <p>
-          <span>2022 © DEMOVÉLLI</span> - TODOS OS DIREITOS RESERVADOS.
-        </p>
-        <span class="mobile-display-none">
-          AGÊNCIA FÊNIX
-        </span>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/less"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-</body>
+          <div class="main-3__squares">
+            <svg
+              width="145"
+              height="145"
+              viewBox="0 0 145 145"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="72.5" height="72.5" fill="#FFE5EA" />
+              <rect
+                x="72.5"
+                y="72.5"
+                width="72.5"
+                height="72.5"
+                fill="#FFE5EA"
+              />
+            </svg>
+          </div>
+        </section>
+        <section class="home-main__4">
+          <div class="main-4__infos">
+            <h2>Praticidade e qualidade em todo lugar</h2>
+            <p>
+              Com atendimento no Rio Grande do Sul e Santa Catarina, as linhas
+              de escritório da Demovélli encantam pela praticidade e acabamento
+              perfeito.
+            </p>
+          </div>
+          <div class="main-4__images">
+            <div>
+              <img
+                class="main-4__image-desktop"
+                src="./assets/images/main-4-1.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="main-4__image-mobile"
+                src="./assets/images/main-4-mobile-1.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="image-line"
+                src="./assets/images/vegas.png"
+                alt="linha Vegas"
+              />
+              <span class="main-4__overlay"></span>
+            </div>
+            <div>
+              <img
+                class="main-4__image-desktop"
+                src="./assets/images/main-4-2.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="main-4__image-mobile"
+                src="./assets/images/main-4-mobile-2.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="image-line"
+                src="./assets/images/style.png"
+                alt="linha Style"
+              />
+              <span class="main-4__overlay"></span>
+            </div>
+            <div>
+              <img
+                class="main-4__image-desktop"
+                src="./assets/images/main-4-3.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="main-4__image-mobile"
+                src="./assets/images/main-4-mobile-3.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="image-line"
+                src="./assets/images/smart.png"
+                alt="linha smart"
+              />
+              <span class="main-4__overlay"></span>
+            </div>
+            <div>
+              <img
+                class="main-4__image-desktop"
+                src="./assets/images/main-4-4.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="main-4__image-mobile"
+                src="./assets/images/main-4-mobile-4.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="image-line"
+                src="./assets/images/painel.png"
+                alt="linha painel"
+              />
+              <span class="main-4__overlay"></span>
+            </div>
+            <div>
+              <img
+                class="main-4__image-desktop"
+                src="./assets/images/main-4-5.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="main-4__image-mobile"
+                src="./assets/images/main-4-mobile-5.png"
+                alt="Imagem de um ambiente"
+              />
+              <img
+                class="image-line"
+                src="./assets/images/domo.png"
+                alt="linha domo"
+              />
+              <span class="main-4__overlay"></span>
+            </div>
+          </div>
+          <div class="main-4__links">
+            <a class="button" href="./pages/office.html"
+              >Conhecer as linhas office</a
+            >
+            <a href="#">Baixar catálogo</a>
+          </div>
+        </section>
+        <section class="home-main__5">
+          <div class="main-5__squares-left">
+            <svg
+              width="123"
+              height="177"
+              viewBox="0 0 123 177"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="64" width="59" height="59" fill="#933748" />
+              <rect y="59" width="59" height="59" fill="#9F394B" />
+              <rect x="59" y="118" width="59" height="59" fill="#AB3B4F" />
+            </svg>
+          </div>
+          <div class="main-5__squares-top">
+            <svg
+              width="237"
+              height="77"
+              viewBox="0 0 237 77"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="237"
+                y="0.138916"
+                width="38.1986"
+                height="48"
+                transform="rotate(90 237 0.138916)"
+                fill="#863644"
+              />
+              <rect
+                x="189"
+                y="37.9669"
+                width="38.1986"
+                height="48"
+                transform="rotate(90 189 37.9669)"
+                fill="#933748"
+              />
+              <rect
+                x="141"
+                y="0.138947"
+                width="38.1986"
+                height="48"
+                transform="rotate(90 141 0.138947)"
+                fill="#9F394B"
+              />
+              <rect
+                x="93"
+                y="38.3376"
+                width="38.1986"
+                height="48"
+                transform="rotate(90 93 38.3376)"
+                fill="#AB3B4F"
+              />
+              <rect
+                x="45"
+                y="0.138947"
+                width="38.1986"
+                height="48"
+                transform="rotate(90 45 0.138947)"
+                fill="#B93C53"
+              />
+            </svg>
+          </div>
+          <h2>Sonhos não envelhecem</h2>
+          <div class="main-5__content">
+            <div class="main-5__image"></div>
+            <a href="./pages/underMeasure.html" class="button"
+              >Quero um ambiente do meu jeito!
+            </a>
+          </div>
+          <div class="main-5__squares-right">
+            <svg
+              width="59"
+              height="177"
+              viewBox="0 0 59 177"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="59"
+                y="177"
+                width="59"
+                height="59"
+                transform="rotate(-180 59 177)"
+                fill="#933748"
+              />
+              <rect
+                x="59"
+                y="118"
+                width="59"
+                height="59"
+                transform="rotate(-180 59 118)"
+                fill="#9F394B"
+              />
+              <rect
+                x="59"
+                y="59"
+                width="59"
+                height="59"
+                transform="rotate(-180 59 59)"
+                fill="#AB3B4F"
+              />
+            </svg>
+          </div>
+        </section>
+        <section class="home-main__6">
+          <div class="main-6__infos">
+            <h2>Nós somos uma fábrica de sonhos</h2>
+            <p>
+              Desde 2002, a nossa missão é desenvolver ambientes agradáveis, que
+              superem as expectativas dos nossos clientes. Com trabalho e
+              competência, transformamos sonhos em ambientes que se encaixam
+              perfeitamente no seu espaço.
+            </p>
 
+            <a class="button" href="#"
+              >Saber mais sobre a Demovélli <img src="./assets/Right.svg" />
+            </a>
+          </div>
+          <div class="main-6__images">
+            <div class="main-6__factory">
+              <img src="./assets/fabrica.svg" alt="Imagem da fabrica" />
+              <a class="button-factory" href="#"> Fábrica Demovélli </a>
+            </div>
+            <div class="main-6__factory-cards">
+              <div class="factory-card">
+                <div>
+                  <span></span>
+                  <h3>4000+</h3>
+                </div>
+                <p>Sonhos realizados</p>
+              </div>
+              <div class="factory-card">
+                <div>
+                  <span></span>
+                  <h3>1000+</h3>
+                </div>
+                <p>peças fabricadas no mês</p>
+              </div>
+              <div class="factory-card">
+                <div>
+                  <span></span>
+                  <h3>150+</h3>
+                </div>
+                <p>representantes em RS e SC</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-main__7">
+          <div class="main-7__card">
+            <img src="./assets/demovelli-card.svg" alt="card demovelli" />
+          </div>
+          <div class="main-7__infos">
+            <h2>Baixe agora nosso catálogo!</h2>
+            <p>Clique e baixe o nosso catálogo completo!</p>
+            <a class="button" href="#"
+              >Quero baixar o catálogo <img src="./assets/Right.svg"
+            /></a>
+          </div>
+          <div class="squares">
+            <img src="./assets/mian-7-squares.svg" alt="card demovelli" />
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="home-footer__container">
+      <div class="footer-content">
+        <div>
+          <img src="./assets/logodemovelli-white.svg" />
+        </div>
+        <div class="footer-content__center">
+          <section class="footer-content__social">
+            <div class="footer-content__about mobile-display-none">
+              <img src="./assets/map.svg" />
+              <div>
+                <p>A Demovélli fica em Catuípe</p>
+                <span>ERS-342 km 96, Pavilhão 2</span>
+              </div>
+            </div>
+            <div class="footer-content__social-item">
+              <img src="./assets/facebook.svg" />
+              <a
+                href="https://www.facebook.com/watch/demovelli/"
+                target="_blank"
+                >/Demovelli</a
+              >
+            </div>
+            <div class="footer-content__social-item">
+              <img src="./assets/instagram.svg" />
+              <a
+                href="https://www.instagram.com/demovelli/?hl=pt"
+                target="_blank"
+                >@Demovelli</a
+              >
+            </div>
+            <div class="footer-content__social-item">
+              <img src="./assets/whatsapp.svg" />
+              <a href="https://linktr.ee/demovelli" target="_blank"
+                >/Demovelli</a
+              >
+            </div>
+          </section>
+          <div class="footer-content__map">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://maps.google.com/maps?q=28%C2%B015'27.9%22S%2054%C2%B000'05.8%22W&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            >
+            </iframe>
+          </div>
+        </div>
+        <section class="footer-content__contact">
+          <div class="footer-content__about">
+            <img src="./assets/sac.svg" />
+            <div>
+              <p>SAC: 0800.700.6522</p>
+              <span>sac@demovelli.com.br</span>
+            </div>
+          </div>
+          <div class="footer-content__about">
+            <img src="./assets/phone.svg" />
+            <div>
+              <p>Fábrica Demovélli</p>
+              <span>(55)3333-5555</span>
+            </div>
+          </div>
+          <div class="footer-content__about">
+            <img src="./assets/map.svg" />
+            <div>
+              <p>A Demovélli fica em Panambi</p>
+              <span>RS 404- km 04 - Distrito Industrial</span>
+            </div>
+          </div>
+        </section>
+        <div class="footer-content__botton">
+          <p><span>2022 © DEMOVÉLLI</span> - TODOS OS DIREITOS RESERVADOS.</p>
+          <span class="mobile-display-none"> AGÊNCIA FÊNIX </span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
 </html>

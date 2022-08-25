@@ -1,53 +1,442 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet/less" type="text/css" href="../styles/about.less" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wire - Sobre</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet/less" type="text/css" href="../styles/about.less" />
-  <title>Wire - Sobre</title>
-</head>
+  <body>
+    <header class="about-header__container">
+      <div class="about-header__content">
+        <div>
+          <img src="../assets/logodemovelli.svg" alt="Logo Demovelli" />
+        </div>
+        <nav class="about-header__nav">
+          <section class="menu">
+            <input type="checkbox" name="hamburger" id="menu__toggle" />
+            <label for="menu__toggle" class="hamburger-button">
+              <span class="hamburger-lines"></span>
+            </label>
 
-<body>
-  <header class="home-header__container">
-    <div class="home-header__content">
-      <div>
-        <img src="./assets/logodemovelli.svg" alt="Logo Demovelli" />
+            <ul class="menu__box">
+              <div>
+                <img
+                  src="../assets/logodemovelli-white.svg"
+                  alt="Logo Demovelli"
+                />
+              </div>
+              <li class="menu__item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="./about.html">A Demovélli</a>
+              </li>
+              <li class="menu__item">
+                <a href="./underMeasure.html">Sob Medida</a>
+              </li>
+              <li class="menu__item">
+                <a href="./office.html">Linha Office</a>
+              </li>
+              <li class="menu__item">
+                <a href="./contact.html">Contato</a>
+              </li>
+            </ul>
+          </section>
+        </nav>
       </div>
-      <nav class="home-header__nav">
-
-        <section class="menu">
-          <input type="checkbox" name="hamburger" id="menu__toggle" />
-          <label for="menu__toggle" class="hamburger-button">
-            <span class="hamburger-lines"></span>
-          </label>
-
-          <ul class="menu__box">
-            <div>
-              <img src="./assets/logodemovelli-white.svg" alt="Logo Demovelli" />
+    </header>
+    <main class="about-main-container">
+      <div class="about-main__content">
+        <section class="about-main__title">
+          <div class="about-main__info">
+            <div class="main-info__title-container">
+              <h1>Seu espaço com novas possibilidades</h1>
+              <p class="main-info__description">
+                Móveis com acabamento sofisticado e materiais de qualidade não
+                precisam ser apenas um sonho.
+              </p>
             </div>
-            <li class="menu__item">
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/about.html">A Demovélli</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/underMeasure.html">Sob Medida</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/office.html">Linha Office</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/contact.html">Contato</a>
-            </li>
-          </ul>
-        </section>
-      </nav>
-    </div>
-  </header>
-  <script src="https://cdn.jsdelivr.net/npm/less"></script>
-</body>
+            <div class="main-info__links">
+              <div class="button">
+                <a href="./underMeasure.html">Conhecer os produtos Demovélli</a>
+              </div>
+              <a href="./about.html" class="home-main__button">Nos Conhecer</a>
+            </div>
 
+            <div class="main-info__qualities">
+              <div class="main-info__card">
+                <img src="../assets/factory.svg" alt="Seta para baixo" />
+                <p>Móveis direto da fábrica</p>
+              </div>
+              <div class="main-info__card">
+                <img src="../assets/furniture.png" alt="Seta para baixo" />
+                <p>Ambientes sob medida</p>
+              </div>
+              <div class="main-info__card">
+                <img src="../assets/delivery.svg" alt="Seta para baixo" />
+                <p>Entrega e montagem própria</p>
+              </div>
+            </div>
+          </div>
+          <div class="logo-demovelli__container">
+            <img src="../assets/LogoDemovelliAbout.svg" />
+          </div>
+          <div class="about-text__container">
+            <p>
+              No mercado desde 2002, a Demovélli tem enraizado em sua origem a
+              cultura empreendedora. Sua fundação passa pela integração com a
+              comunidade e tem como missão entregar qualidade em tudo o que faz.
+            </p>
+
+            <p>
+              Nossa filosofia de integrar ambientes com pessoas de forma que
+              essa interação crie novas possibilidades é a base da criação e da
+              forma Demovélli de agregar valor. Novas formas, novas
+              possibilidades.
+            </p>
+
+            <p>
+              O alto nível de comprometimento de entrega é o que nos guia desde
+              o início da empresa e já são mais de duas décadas realizando
+              sonhos
+            </p>
+          </div>
+        </section>
+        <section class="about-image__container">
+          <img
+            src="../assets/images/about-image.png"
+            alt="Imagem de um ambiente"
+          />
+          <button>
+            <a href="./underMeasure.html">Fábrica Demovélli</a>
+          </button>
+          <div class="about-text__container">
+            <p>
+              No mercado desde 2002, a Demovélli tem enraizado em sua origem a
+              cultura empreendedora. Sua fundação passa pela integração com a
+              comunidade e tem como missão entregar qualidade em tudo o que faz.
+            </p>
+
+            <p>
+              Nossa filosofia de integrar ambientes com pessoas de forma que
+              essa interação crie novas possibilidades é a base da criação e da
+              forma Demovélli de agregar valor. Novas formas, novas
+              possibilidades.
+            </p>
+
+            <p>
+              O alto nível de comprometimento de entrega é o que nos guia desde
+              o início da empresa e já são mais de duas décadas realizando
+              sonhos
+            </p>
+          </div>
+        </section>
+        <section class="whatsapp-section__container">
+          <div class="whatsapp-section__container-section1">
+            <h2>Novas formas, novas possibilidades</h2>
+            <button>
+              <img src="../assets/whatsapp.svg" alt="Whatsapp" />
+              <p>Conversar com um consultor</p>
+            </button>
+          </div>
+          <div class="whatsapp-section__container-section2">
+            <div class="card">
+              <div>
+                <div class="square"></div>
+                <p>4000+</p>
+              </div>
+              <p>Sonhos realizados</p>
+            </div>
+            <div class="card">
+              <div>
+                <div class="square"></div>
+                <p>1000+</p>
+              </div>
+              <p>peças fabricadas no mês</p>
+            </div>
+            <div class="card">
+              <div>
+                <div class="square"></div>
+                <p>150+</p>
+              </div>
+              <p>representantes em RS e SC</p>
+            </div>
+          </div>
+        </section>
+        <section class="video-section__container">
+          <div class="video-container">
+            <img src="../assets/player.svg" alt="a video player image" />
+          </div>
+          <div class="about-video__container">
+            <p>
+              Fábrica, equipe e vários parceiros em uma só missão: encantar e
+              deixar o seu ambiente como você sempre sonhou
+            </p>
+            <em>Assista o nosso vídeo institucional</em>
+          </div>
+          <div class="square-container">
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square3"></div>
+            <div class="square4"></div>
+            <div class="square5"></div>
+          </div>
+          <div class="pink-square__1"></div>
+          <div class="pink-square__2"></div>
+        </section>
+        <section class="about-underMeasure__section-container">
+          <div class="about-underMeasure__section-1">
+            <div class="left-container">
+              <h1>SOB MEDIDA</h1>
+              <p>
+                Otimize o seu ambiente! Construuímos projetos que se encaixam
+                perfeitamente no seu espaço, deixando-o mais elegante,
+                organizado e agradável
+              </p>
+              <button>
+                <a href="./underMeasure.html">Saber mais sobre os Planejados</a>
+              </button>
+            </div>
+            <div>
+              <img
+                src="../assets/images/about-underMeasure.png"
+                alt="sob medida"
+              />
+            </div>
+          </div>
+          <div class="about-underMeasure__section-2">
+            <div>
+              <img src="../assets/images/linesOffice.png" alt="sob medida" />
+            </div>
+            <div class="right-container">
+              <h1>LINHAS OFFICE</h1>
+              <p>
+                Presente no Rio Grande do Sul e Santa Catarina, as linhas, de
+                escritório da Demovélli encantam pela praticidade e acabamento
+                perfeito.
+              </p>
+              <button>
+                <a href="./office.html">Conhecer as linhas de escritório</a>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="instagram-section__container">
+          <div class="instagram-top__content">
+            <h1>Elegância e qualidade que você merece!</h1>
+            <button>
+              <svg
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.3214 2.76893C19.3825 2.76893 19.9363 2.76893 21.5977 2.76893C23.0744 2.76893 23.8128 3.13812 24.3666 3.32272C25.105 3.69191 25.6588 3.8765 26.2125 4.43029C26.7663 4.98408 27.1355 5.53786 27.3201 6.27624C27.5047 6.83003 27.6893 7.56841 27.8739 9.04518C27.8739 10.7065 27.8739 11.0757 27.8739 15.3214C27.8739 19.5671 27.8739 19.9363 27.8739 21.5977C27.8739 23.0744 27.5047 23.8128 27.3201 24.3666C26.9509 25.105 26.7663 25.6588 26.2125 26.2125C25.6588 26.7663 25.105 27.1355 24.3666 27.3201C23.8128 27.5047 23.0744 27.6893 21.5977 27.8739C19.9363 27.8739 19.5671 27.8739 15.3214 27.8739C11.0757 27.8739 10.7065 27.8739 9.04518 27.8739C7.56841 27.8739 6.83003 27.5047 6.27624 27.3201C5.53786 26.9509 4.98408 26.7663 4.43029 26.2125C3.8765 25.6588 3.50731 25.105 3.32272 24.3666C3.13812 23.8128 2.95353 23.0744 2.76893 21.5977C2.76893 19.9363 2.76893 19.5671 2.76893 15.3214C2.76893 11.0757 2.76893 10.7065 2.76893 9.04518C2.76893 7.56841 3.13812 6.83003 3.32272 6.27624C3.69191 5.53786 3.8765 4.98408 4.43029 4.43029C4.98408 3.8765 5.53786 3.50731 6.27624 3.32272C6.83003 3.13812 7.56841 2.95353 9.04518 2.76893C10.7065 2.76893 11.2603 2.76893 15.3214 2.76893ZM15.3214 0C11.0757 0 10.7065 0 9.04518 0C7.38382 0 6.27624 0.369192 5.35327 0.738383C4.43029 1.10757 3.50731 1.66136 2.58434 2.58434C1.66136 3.50731 1.29217 4.2457 0.738383 5.35327C0.369192 6.27624 0.184595 7.38382 0 9.04518C0 10.7065 0 11.2603 0 15.3214C0 19.5671 0 19.9363 0 21.5977C0 23.259 0.369192 24.3666 0.738383 25.2896C1.10757 26.2125 1.66136 27.1355 2.58434 28.0585C3.50731 28.9815 4.2457 29.3507 5.35327 29.9045C6.27624 30.2736 7.38382 30.4582 9.04518 30.6428C10.7065 30.6428 11.2603 30.6428 15.3214 30.6428C19.3825 30.6428 19.9363 30.6428 21.5977 30.6428C23.259 30.6428 24.3666 30.2736 25.2896 29.9045C26.2125 29.5353 27.1355 28.9815 28.0585 28.0585C28.9815 27.1355 29.3507 26.3971 29.9045 25.2896C30.2736 24.3666 30.4582 23.259 30.6428 21.5977C30.6428 19.9363 30.6428 19.3825 30.6428 15.3214C30.6428 11.2603 30.6428 10.7065 30.6428 9.04518C30.6428 7.38382 30.2736 6.27624 29.9045 5.35327C29.5353 4.43029 28.9815 3.50731 28.0585 2.58434C27.1355 1.66136 26.3971 1.29217 25.2896 0.738383C24.3666 0.369192 23.259 0.184595 21.5977 0C19.9363 0 19.5671 0 15.3214 0Z"
+                  fill="#cb3f58"
+                />
+                <path
+                  d="M15.3214 7.38382C10.8911 7.38382 7.38382 10.8911 7.38382 15.3214C7.38382 19.7517 10.8911 23.259 15.3214 23.259C19.7517 23.259 23.259 19.7517 23.259 15.3214C23.259 10.8911 19.7517 7.38382 15.3214 7.38382ZM15.3214 20.4901C12.5525 20.4901 10.1527 18.2749 10.1527 15.3214C10.1527 12.5525 12.3679 10.1527 15.3214 10.1527C18.0903 10.1527 20.4901 12.3679 20.4901 15.3214C20.4901 18.0903 18.0903 20.4901 15.3214 20.4901Z"
+                  fill="#cb3f58"
+                />
+                <path
+                  d="M23.4436 9.04518C24.4631 9.04518 25.2896 8.21871 25.2896 7.19922C25.2896 6.17973 24.4631 5.35327 23.4436 5.35327C22.4241 5.35327 21.5977 6.17973 21.5977 7.19922C21.5977 8.21871 22.4241 9.04518 23.4436 9.04518Z"
+                  fill="#cb3f58"
+                />
+              </svg>
+              <a href="">Conhecer nosso instagram</a>
+            </button>
+          </div>
+          <div class="instagram-bottom__content">
+            <div class="left-container">
+              <div>
+                <svg
+                  width="58"
+                  height="58"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.3214 2.76893C19.3825 2.76893 19.9363 2.76893 21.5977 2.76893C23.0744 2.76893 23.8128 3.13812 24.3666 3.32272C25.105 3.69191 25.6588 3.8765 26.2125 4.43029C26.7663 4.98408 27.1355 5.53786 27.3201 6.27624C27.5047 6.83003 27.6893 7.56841 27.8739 9.04518C27.8739 10.7065 27.8739 11.0757 27.8739 15.3214C27.8739 19.5671 27.8739 19.9363 27.8739 21.5977C27.8739 23.0744 27.5047 23.8128 27.3201 24.3666C26.9509 25.105 26.7663 25.6588 26.2125 26.2125C25.6588 26.7663 25.105 27.1355 24.3666 27.3201C23.8128 27.5047 23.0744 27.6893 21.5977 27.8739C19.9363 27.8739 19.5671 27.8739 15.3214 27.8739C11.0757 27.8739 10.7065 27.8739 9.04518 27.8739C7.56841 27.8739 6.83003 27.5047 6.27624 27.3201C5.53786 26.9509 4.98408 26.7663 4.43029 26.2125C3.8765 25.6588 3.50731 25.105 3.32272 24.3666C3.13812 23.8128 2.95353 23.0744 2.76893 21.5977C2.76893 19.9363 2.76893 19.5671 2.76893 15.3214C2.76893 11.0757 2.76893 10.7065 2.76893 9.04518C2.76893 7.56841 3.13812 6.83003 3.32272 6.27624C3.69191 5.53786 3.8765 4.98408 4.43029 4.43029C4.98408 3.8765 5.53786 3.50731 6.27624 3.32272C6.83003 3.13812 7.56841 2.95353 9.04518 2.76893C10.7065 2.76893 11.2603 2.76893 15.3214 2.76893ZM15.3214 0C11.0757 0 10.7065 0 9.04518 0C7.38382 0 6.27624 0.369192 5.35327 0.738383C4.43029 1.10757 3.50731 1.66136 2.58434 2.58434C1.66136 3.50731 1.29217 4.2457 0.738383 5.35327C0.369192 6.27624 0.184595 7.38382 0 9.04518C0 10.7065 0 11.2603 0 15.3214C0 19.5671 0 19.9363 0 21.5977C0 23.259 0.369192 24.3666 0.738383 25.2896C1.10757 26.2125 1.66136 27.1355 2.58434 28.0585C3.50731 28.9815 4.2457 29.3507 5.35327 29.9045C6.27624 30.2736 7.38382 30.4582 9.04518 30.6428C10.7065 30.6428 11.2603 30.6428 15.3214 30.6428C19.3825 30.6428 19.9363 30.6428 21.5977 30.6428C23.259 30.6428 24.3666 30.2736 25.2896 29.9045C26.2125 29.5353 27.1355 28.9815 28.0585 28.0585C28.9815 27.1355 29.3507 26.3971 29.9045 25.2896C30.2736 24.3666 30.4582 23.259 30.6428 21.5977C30.6428 19.9363 30.6428 19.3825 30.6428 15.3214C30.6428 11.2603 30.6428 10.7065 30.6428 9.04518C30.6428 7.38382 30.2736 6.27624 29.9045 5.35327C29.5353 4.43029 28.9815 3.50731 28.0585 2.58434C27.1355 1.66136 26.3971 1.29217 25.2896 0.738383C24.3666 0.369192 23.259 0.184595 21.5977 0C19.9363 0 19.5671 0 15.3214 0Z"
+                    fill="#FFE5EA"
+                  />
+                  <path
+                    d="M15.3214 7.38382C10.8911 7.38382 7.38382 10.8911 7.38382 15.3214C7.38382 19.7517 10.8911 23.259 15.3214 23.259C19.7517 23.259 23.259 19.7517 23.259 15.3214C23.259 10.8911 19.7517 7.38382 15.3214 7.38382ZM15.3214 20.4901C12.5525 20.4901 10.1527 18.2749 10.1527 15.3214C10.1527 12.5525 12.3679 10.1527 15.3214 10.1527C18.0903 10.1527 20.4901 12.3679 20.4901 15.3214C20.4901 18.0903 18.0903 20.4901 15.3214 20.4901Z"
+                    fill="#FFE5EA"
+                  />
+                  <path
+                    d="M23.4436 9.04518C24.4631 9.04518 25.2896 8.21871 25.2896 7.19922C25.2896 6.17973 24.4631 5.35327 23.4436 5.35327C22.4241 5.35327 21.5977 6.17973 21.5977 7.19922C21.5977 8.21871 22.4241 9.04518 23.4436 9.04518Z"
+                    fill="#FFE5EA"
+                  />
+                </svg>
+                <p>@DEMOVELLI</p>
+                <button>
+                  <a href=""> VER NO INSTA </a>
+                </button>
+              </div>
+            </div>
+            <div class="right-container">
+              <div class="container-A">
+                <img src="../assets/images/image-A.png" alt="" />
+                <img src="../assets/images/image-A2.png" alt="" />
+              </div>
+              <div class="container-B">
+                <img src="../assets/images/image-B.png" alt="" />
+              </div>
+
+              <div class="logo">
+                <img src="../assets/LogoDemovelliAbout.svg" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="location-section__container">
+          <div>
+            <svg
+              width="118"
+              height="236"
+              viewBox="0 0 118 236"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="118"
+                y="236"
+                width="59"
+                height="59"
+                transform="rotate(-180 118 236)"
+                fill="#FFCBD4"
+              />
+              <rect
+                x="59"
+                y="177"
+                width="59"
+                height="59"
+                transform="rotate(-180 59 177)"
+                fill="#FFCBD4"
+              />
+              <rect
+                x="118"
+                y="118"
+                width="59"
+                height="59"
+                transform="rotate(-180 118 118)"
+                fill="#FFCBD4"
+              />
+              <rect
+                x="59"
+                y="59"
+                width="59"
+                height="59"
+                transform="rotate(-180 59 59)"
+                fill="#FFCBD4"
+              />
+            </svg>
+          </div>
+          <div class="text-container">
+            <h1>Onde estamos?</h1>
+            <p>
+              A fábrica Demovélli fica localizada em Catuípe/RS. Contamos com
+              parceiros que fazem a nossa marca estar presente desde o Rio
+              Grande do Sul até São Paulo.
+            </p>
+          </div>
+          <div>
+            <img src="../assets/images/location.png" alt="" />
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="home-footer__container">
+      <div class="footer-content">
+        <div>
+          <img src="../assets/logodemovelli-white.svg" />
+        </div>
+        <div class="footer-content__center">
+          <section class="footer-content__social">
+            <div class="footer-content__about mobile-display-none">
+              <img src="../assets/map.svg" />
+              <div>
+                <p>A Demovélli fica em Catuípe</p>
+                <span>ERS-342 km 96, Pavilhão 2</span>
+              </div>
+            </div>
+            <div class="footer-content__social-item">
+              <img src="../assets/facebook.svg" />
+              <a
+                href="https://www.facebook.com/watch/demovelli/"
+                target="_blank"
+                >/Demovelli</a
+              >
+            </div>
+            <div class="footer-content__social-item">
+              <img src="../assets/instagram.svg" />
+              <a
+                href="https://www.instagram.com/demovelli/?hl=pt"
+                target="_blank"
+                >@Demovelli</a
+              >
+            </div>
+            <div class="footer-content__social-item">
+              <img src="../assets/whatsapp.svg" />
+              <a href="https://linktr.ee/demovelli" target="_blank"
+                >/Demovelli</a
+              >
+            </div>
+          </section>
+          <div class="footer-content__map">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://maps.google.com/maps?q=28%C2%B015'27.9%22S%2054%C2%B000'05.8%22W&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            >
+            </iframe>
+          </div>
+        </div>
+        <section class="footer-content__contact">
+          <div class="footer-content__about">
+            <img src="../assets/sac.svg" />
+            <div>
+              <p>SAC: 0800.700.6522</p>
+              <span>sac@demovelli.com.br</span>
+            </div>
+          </div>
+          <div class="footer-content__about">
+            <img src="../assets/phone.svg" />
+            <div>
+              <p>Fábrica Demovélli</p>
+              <span>(55)3333-5555</span>
+            </div>
+          </div>
+          <div class="footer-content__about">
+            <img src="../assets/map.svg" />
+            <div>
+              <p>A Demovélli fica em Panambi</p>
+              <span>RS 404- km 04 - Distrito Industrial</span>
+            </div>
+          </div>
+        </section>
+        <div class="footer-content__botton">
+          <p><span>2022 © DEMOVÉLLI</span> - TODOS OS DIREITOS RESERVADOS.</p>
+          <span class="mobile-display-none"> AGÊNCIA FÊNIX </span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+  </body>
 </html>
