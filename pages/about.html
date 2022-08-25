@@ -1,53 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet/less" type="text/css" href="../styles/about.less" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wire - Sobre</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet/less" type="text/css" href="../styles/about.less" />
-  <title>Wire - Sobre</title>
-</head>
+  <body>
+    <header class="about-header__container">
+      <div class="about-header__content">
+        <div>
+          <img src="../assets/logodemovelli.svg" alt="Logo Demovelli" />
+        </div>
+        <nav class="about-header__nav">
+          <section class="menu">
+            <input type="checkbox" name="hamburger" id="menu__toggle" />
+            <label for="menu__toggle" class="hamburger-button">
+              <span class="hamburger-lines"></span>
+            </label>
 
-<body>
-  <header class="home-header__container">
-    <div class="home-header__content">
-      <div>
-        <img src="./assets/logodemovelli.svg" alt="Logo Demovelli" />
+            <ul class="menu__box">
+              <div>
+                <img
+                  src="../assets/logodemovelli-white.svg"
+                  alt="Logo Demovelli"
+                />
+              </div>
+              <li class="menu__item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="./about.html">A Demovélli</a>
+              </li>
+              <li class="menu__item">
+                <a href="./underMeasure.html">Sob Medida</a>
+              </li>
+              <li class="menu__item">
+                <a href="./office.html">Linha Office</a>
+              </li>
+              <li class="menu__item">
+                <a href="./contact.html">Contato</a>
+              </li>
+            </ul>
+          </section>
+        </nav>
       </div>
-      <nav class="home-header__nav">
-
-        <section class="menu">
-          <input type="checkbox" name="hamburger" id="menu__toggle" />
-          <label for="menu__toggle" class="hamburger-button">
-            <span class="hamburger-lines"></span>
-          </label>
-
-          <ul class="menu__box">
-            <div>
-              <img src="./assets/logodemovelli-white.svg" alt="Logo Demovelli" />
+    </header>
+    <main class="about-main-container">
+      <div class="about-main__content">
+        <section class="about-main__title">
+          <div class="about-main__info">
+            <div class="main-info__title-container">
+              <h1>Seu espaço com novas possibilidades</h1>
+              <p class="main-info__description">
+                Móveis com acabamento sofisticado e materiais de qualidade não
+                precisam ser apenas um sonho.
+              </p>
             </div>
-            <li class="menu__item">
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/about.html">A Demovélli</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/underMeasure.html">Sob Medida</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/office.html">Linha Office</a>
-            </li>
-            <li class="menu__item">
-              <a href="./pages/contact.html">Contato</a>
-            </li>
-          </ul>
-        </section>
-      </nav>
-    </div>
-  </header>
-  <script src="https://cdn.jsdelivr.net/npm/less"></script>
-</body>
+            <div class="main-info__links">
+              <div class="button">
+                <a href="./underMeasure.html">Conhecer os produtos Demovélli</a>
+              </div>
+              <a href="./about.html" class="home-main__button">Nos Conhecer</a>
+            </div>
 
+            <div class="main-info__qualities">
+              <div class="main-info__card">
+                <img src="../assets/factory.svg" alt="Seta para baixo" />
+                <p>Móveis direto da fábrica</p>
+              </div>
+              <div class="main-info__card">
+                <img src="../assets/furniture.png" alt="Seta para baixo" />
+                <p>Ambientes sob medida</p>
+              </div>
+              <div class="main-info__card">
+                <img src="../assets/delivery.svg" alt="Seta para baixo" />
+                <p>Entrega e montagem própria</p>
+              </div>
+            </div>
+          </div>
+          <div class="logo-demovelli__container">
+            <img src="../assets/LogoDemovelliAbout.svg" />
+          </div>
+          <div class="about-text__container">
+            <p>
+              No mercado desde 2002, a Demovélli tem enraizado em sua origem a
+              cultura empreendedora. Sua fundação passa pela integração com a
+              comunidade e tem como missão entregar qualidade em tudo o que faz.
+            </p>
+
+            <p>
+              Nossa filosofia de integrar ambientes com pessoas de forma que
+              essa interação crie novas possibilidades é a base da criação e da
+              forma Demovélli de agregar valor. Novas formas, novas
+              possibilidades.
+            </p>
+
+            <p>
+              O alto nível de comprometimento de entrega é o que nos guia desde
+              o início da empresa e já são mais de duas décadas realizando
+              sonhos
+            </p>
+          </div>
+        </section>
+        <section class="about-image__container">
+          <img
+            src="../assets/images/about-image.png"
+            alt="Imagem de um ambiente"
+          />
+          <button>
+            <a href="./underMeasure.html">Fábrica Demovélli</a>
+          </button>
+        </section>
+        <section class="whatsapp-section__container">
+          <div class="whatsapp-section__container-section1">
+            <h2>Novas formas, novas possibilidades</h2>
+            <button>
+              <img src="../assets/whatsapp.svg" alt="Whatsapp" />
+              <p>Conversar com um consultor</p>
+            </button>
+          </div>
+          <div class="whatsapp-section__container-section2">
+            <div class="card">
+              <div>
+                <div class="square"></div>
+                <p>4000+</p>
+              </div>
+              <p>Sonhos realizados</p>
+            </div>
+            <div class="card">
+              <div>
+                <div class="square"></div>
+                <p>1000+</p>
+              </div>
+              <p>peças fabricadas no mês</p>
+            </div>
+            <div class="card">
+              <div>
+                <div class="square"></div>
+                <p>150+</p>
+              </div>
+              <p>representantes em RS e SC</p>
+            </div>
+          </div>
+        </section>
+        <section class="video-section__container">
+          <div class="video-container">
+            <img src="../assets/player.svg" alt="a video player image" />
+          </div>
+          <div class="about-video__container">
+            <p>
+              Fábrica, equipe e vários parceiros em uma só missão: encantar e
+              deixar o seu ambiente como você sempre sonhou
+            </p>
+            <em>Assista o nosso vídeo institucional</em>
+          </div>
+          <div class="square-container">
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square3"></div>
+            <div class="square4"></div>
+            <div class="square5"></div>
+          </div>
+          <div class="pink-square__1"></div>
+          <div class="pink-square__2"></div>
+        </section>
+        <section class="about-underMeasure__section-container">
+          <div class="about-underMeasure__section-1">
+            <div class="left-container">
+              <h1>SOB MEDIDA</h1>
+              <p>
+                Otimize o seu ambiente! Construuímos projetos que se encaixam
+                perfeitamente no seu espaço, deixando-o mais elegante,
+                organizado e agradável
+              </p>
+              <button>
+                <a href="./underMeasure.html">Saber mais sobre os Planejados</a>
+              </button>
+            </div>
+            <div>
+              <img
+                src="../assets/images/about-underMeasure.png"
+                alt="sob medida"
+              />
+            </div>
+          </div>
+          <div class="about-underMeasure__section-2">
+            <div>
+              <img src="../assets/images/linesOffice.png" alt="sob medida" />
+            </div>
+            <div class="right-container">
+              <h1>LINHAS OFFICE</h1>
+              <p>
+                Presente no Rio Grande do Sul e Santa Catarina, as linhas, de
+                escritório da Demovélli encantam pela praticidade e acabamento
+                perfeito.
+              </p>
+              <button>
+                <a href="./office.html">Conhecer as linhas de escritório</a>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+  </body>
 </html>
