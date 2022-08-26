@@ -272,12 +272,78 @@
         <div class="carousel" data-flickity='{ "freeScroll": true }'>
           <div class="carousel-cell">
             <img src="../assets/images/testimonial-1.png" alt="carousel image" />
+            <section>
+              <div class="section">
+                <p class="container partial">
+                  "Quando mudamos para o apartamento novo em Santo ngelo, já pensei na Demovélli para fazer nossa
+                  cozinha
+                  sob medida. Além
+                  do trabalho de qualidade, o fato da empresa ter um nome confiável e ter anos atuando na área, não nos
+                  fez ter dúvida:
+                  era essa qualidade e confiança que a gente queria no nosso cantinho. A cozinha ficou incrível, todos
+                  os detalhes e tudo
+                  foi pensado com carinho pelos profissionais, sempre priorizando as nossas preferências. Confesso que o
+                  resultado foi
+                  melhor do que esperávamos, amamos e com certeza recomendamos a empresa”.
+                </p>
+                <a class="txt-more" href="javascript:void(0);"></a>
+              </div>
+              <span>
+                Bruna Kapp
+              </span>
+            </section>
           </div>
           <div class="carousel-cell">
             <img src="../assets/images/testimonial-2.png" alt="carousel image" />
+            <section>
+              <div class="section">
+                <p class="container partial">
+                  "Quando nós fizemos o projeto para a construção da nossa casa já aproveitamos e fizemos o projeto de
+                  interiores. Com o
+                  avanço da obra e o projeto em mãos, iniciamos o processo de escolha da empresa para fazer os móveis
+                  pra nós. Optamos
+                  pela Demovélli primeiro por conhecer a empresa e por ser uma empresa de Catuípe; segundo por termos
+                  referência e a
+                  confiança no trabalho deles e no que eles iam nos proporcionar. Tudo o que a gente esperava, foi
+                  concretizado na
+                  prática: os prazos foram cumpridos, o atendimento foi realizado, os móveis foram instalados da forma
+                  correta, e tudo o
+                  que combinamos foi cumprido. Isso nos agradou bastante, tanto que nós temos mais coisas a realizar na
+                  casa, e com
+                  certeza é a Demovélli que nós vamos procurar".
+                </p>
+                <a class="txt-more" href="javascript:void(0);"></a>
+              </div>
+              <span>
+                Jaqueline S. C e Nilton C.
+              </span>
+            </section>
           </div>
           <div class="carousel-cell">
             <img src="../assets/images/testimonial-3.png" alt="carousel image" />
+            <section>
+              <div class="section">
+                <p class="container partial">
+                  “Em abril desse ano resolvemos mudar! Nossa cozinha antiga ficou no antigo apartamento, gostava muito
+                  dela queria poder
+                  ter levado junto, então, a minha nova tinha que ser à altura. Embora o apartamento é alugado resolvi
+                  dar uma conversada
+                  com as gurias da Demovélli para fazer um orçamento. sempre quis um projeto por alguém "entendido" do
+                  assunto. Fechou
+                  todas: pertinho de mim, local onde tenho crédito, material de qualidade, profissionais sempre
+                  acessíveis, atendimento
+                  show! Conheci a arquiteta Fernanda e adotei a proposta. Resultado era pra ser "só" uma bancada e
+                  acabei com uma cozinha
+                  linda top de linha. Supriu meu vazio com a mudança de lar! Enfim, estou REALIZADA com minha cozinha
+                  Demovélli e minha
+                  pedra com pintas azuis”.
+                </p>
+                <a class="txt-more" href="javascript:void(0);"></a>
+              </div>
+              <span>
+                Larissa Antunes
+              </span>
+            </section>
           </div>
         </div>
       </section>
@@ -320,7 +386,8 @@
             isso.</p>
         </div>
         <button class="collapsible">Qual é a vantagem em comprar da Demovélli? <img
-            src="../assets/images/arrow-down.png"> </button>
+            src="../assets/images/arrow-down.png">
+        </button>
         <div class="content">
           <p>A nossa entrega é muito além de um produto sofisticado e de qualidade. Com mais de 20 anos de conhecimento
             do
@@ -406,6 +473,18 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script>
     const coll = [...document.getElementsByClassName("collapsible")];
+
+    var morelinks = document.querySelectorAll(".section > .txt-more");
+
+    for (var i = 0, j = morelinks.length; i < j; i++) {
+      morelinks[i].onclick = function () {
+        var container = this.parentNode.querySelector(".container");
+        container.classList.toggle("show");
+        container.classList.toggle("partial");
+        this.classList.toggle("txt-more");
+      };
+    }
+
     const openCollapse = ({ target }) => {
       target.classList.toggle("active");
       const content = target.nextElementSibling;
