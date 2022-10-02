@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -140,31 +141,31 @@
             </p>
           </article>
         </div>
-        <div class="carousel-1 js-flickity">
-          <div class="carousel-cell">
+        <div class="carousel-1 js-flickity" data-flickity='{ "autoPlay": true }'>
+          <section class="carousel-cell">
             <img src="../assets/images/main-carousel1.png" alt="carousel image" />
-          </div>
-          <div class="carousel-cell">
+          </section>
+          <section class="carousel-cell">
             <img src="../assets/images/main-carousel2.png" alt="carousel image" />
-          </div>
-          <div class="carousel-cell">
+          </section>
+          <section class="carousel-cell">
             <img src="../assets/images/main-carousel3.png" alt="carousel image" />
-          </div>
-          <div class="carousel-cell">
+          </section>
+          <section class="carousel-cell">
             <img src="../assets/images/main-carousel4.png" alt="carousel image" />
-          </div>
-          <div class="carousel-cell">
+          </section>
+          <section class="carousel-cell">
             <img src="../assets/images/main-carousel5.png" alt="carousel image" />
-          </div>
-          <div class="carousel-cell">
+          </section>
+          <section class="carousel-cell">
             <img src="../assets/images/main-carousel6.png" alt="carousel image" />
-          </div>
-          <div class="carousel-cell">
+          </section>
+          <section class="carousel-cell">
             <img src="../assets/images/main-carousel7.png" alt="carousel image" />
-          </div>
-          <div class="carousel-cell">
+          </section>
+          <section class="carousel-cell">
             <img src="../assets/images/main-carousel8.png" alt="carousel image" />
-          </div>
+          </section>
         </div>
       </section>
       <section class="underMeasure-main__3">
@@ -175,57 +176,57 @@
             Conversar com um consultor</a>
         </div>
         <div class="main-3__cards">
-          <div class="cards-1">
-            <div class="main-3__card">
+          <section class="cards-1">
+            <section class="main-3__card">
               <div class="card-image">
                 <img src="../assets/kitchen.svg">
               </div>
               <p>Cozinha</p>
-            </div>
-            <div class="main-3__card">
+            </section>
+            <section class="main-3__card">
               <div class="card-image">
                 <img src="../assets/bedroom.svg">
               </div>
               <p>Quarto</p>
-            </div>
-            <div class="main-3__card">
+            </section>
+            <section class="main-3__card">
               <div class="card-image">
                 <img src="../assets/livingRoom.svg">
               </div>
               <p>Sala de estar</p>
-            </div>
-            <div class="main-3__card">
+            </section>
+            <section class="main-3__card">
               <div class="card-image">
                 <img src="../assets/tv-tabler 1.svg">
               </div>
               <p>Painéis de tv</p>
-            </div>
-          </div>
+            </section>
+          </section>
           <div class="cards-2">
-            <div class="main-3__card">
+            <section class="main-3__card">
               <div class="card-image">
                 <img src="../assets/Restroom.svg">
               </div>
               <p>Banheiros</p>
-            </div>
-            <div class="main-3__card">
+            </section>
+            <section class="main-3__card">
               <div class="card-image">
                 <img src="../assets/laundry.svg">
               </div>
               <p>Lavanderias</p>
-            </div>
-            <div class="main-3__card">
+            </section>
+            <section class="main-3__card">
               <div class="card-image">
                 <img src="../assets/office.svg">
               </div>
               <p>Escritórios</p>
-            </div>
-            <div class="main-3__card">
+            </section>
+            <section class="main-3__card">
               <div class="card-image">
                 <img src="../assets/Closets.svg">
               </div>
               <p>Closets</p>
-            </div>
+            </section>
           </div>
         </div>
         <a href="https://linktr.ee/demovelli" class="button mobile">
@@ -233,7 +234,7 @@
           Conversar com um consultor</a>
       </section>
       <section class="underMeasure-main__4">
-        <div class="main-4__card-1">
+        <section class="main-4__card-1">
           <div>
             <img src="../assets/star.svg" alt="card demovelli">
             <h3>
@@ -243,8 +244,8 @@
           <p>
             A qualidade e o compromisso da Demovélli com os clientes já se estende por mais de 20 anos.
           </p>
-        </div>
-        <div class="main-4__card-2">
+        </section>
+        <section class="main-4__card-2">
           <div>
             <img src="../assets/truck.svg" alt="card demovelli">
             <h3>
@@ -254,8 +255,8 @@
           <p>
             Montagem profissional com equipe da própria Demovélli
           </p>
-        </div>
-        <div class="main-4__card-3">
+        </section>
+        <section class="main-4__card-3">
           <div>
             <img src="../assets/shild.svg" alt="card demovelli">
             <h3>
@@ -265,7 +266,7 @@
           <p>
             Para a linha sob medida, garantimos qualidade dos produtos do início ao fim.
           </p>
-        </div>
+        </section>
       </section>
       <section class="underMeasure-main__5">
         <h1>Quem já transformou o seu ambiente com a Demovélli</h1>
@@ -464,6 +465,98 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/less"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+    integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"
+    integrity="sha512-6BvDODEWgjWWyBrg6YFio6xmzgKWpf54tDlnCtG05m++/jgh/7jQcx6jUJrq44lB84cf68FzYiT0LipabA5g8g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".menu__box li", {
+      x: -50,
+      opacity: 0,
+      ease: "power4.out",
+      stagger: { each: 0.2 },
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".home-main__info",
+        start: "top 100%",
+        end: "top 0%",
+      },
+    });
+
+    gsap.from(".underMeasure-main__1 div", {
+      y: 150,
+      opacity: 0,
+      ease: "power4.out",
+      stagger: { each: 0.2 },
+      duration: 2,
+      scrollTrigger: {
+        toggleActions: "play none none none",
+        trigger: ".underMeasure-main__1",
+        start: "top 80%",
+        end: "top 0%",
+      },
+    });
+
+    gsap.from(".underMeasure-main__2 div", {
+      y: 150,
+      opacity: 0,
+      ease: "power4.out",
+      stagger: { each: 0.2 },
+      duration: 2,
+      scrollTrigger: {
+        toggleActions: "play none none none",
+        trigger: ".underMeasure-main__2",
+        start: "top 100%",
+        end: "top 0%",
+      },
+    });
+
+    gsap.from(".underMeasure-main__3 section", {
+      y: 50,
+      opacity: 0,
+      ease: "power4.out",
+      stagger: { each: 0.2 },
+      duration: 2,
+      scrollTrigger: {
+        toggleActions: "play none none none",
+        trigger: ".underMeasure-main__3",
+        start: "top 100%",
+        end: "top 0%",
+      },
+    });
+
+    gsap.from(".underMeasure-main__4 section", {
+      y: 100,
+      opacity: 0.5,
+      ease: "power4.out",
+      stagger: { each: 0.2 },
+      duration: 1.5,
+      scrollTrigger: {
+        toggleActions: "play none none none",
+        trigger: ".underMeasure-main__4",
+        start: "top 100%",
+        end: "top 0%",
+      },
+    });
+
+    gsap.from(".underMeasure-main__5 .section", {
+      y: 150,
+      opacity: 0,
+      ease: "power4.out",
+      stagger: { each: 0.2 },
+      duration: 2,
+      scrollTrigger: {
+        toggleActions: "play none none none",
+        trigger: ".section",
+        start: "top 100%",
+        end: "top 0%",
+      },
+    });
+  </script>
   <script>
     const coll = [...document.getElementsByClassName("collapsible")];
 
