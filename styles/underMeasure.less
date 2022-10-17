@@ -621,6 +621,22 @@ body {
   }
 }
 
+.swiffy-slider.slider-indicators-outside .slider-nav.carr2 {
+  position: absolute;
+  top: -50px;
+  left: 90%;
+  border-radius: 0;
+  color: #863644;
+  width: 40.99px;
+  height: 40.99px;
+  visibility: visible;
+  display: flex;
+  background: rgba(225, 50, 82, 0.855);
+  &:nth-child(2) {
+    left: 85%;
+  }
+}
+
 .carousel-1 {
   width: 50%;
 
@@ -809,6 +825,19 @@ body {
   }
 }
 
+.second-carousel {
+  width: 100%;
+}
+.main-carousel {
+  width: 50%;
+}
+
+.slider-indicators {
+  button {
+    background-color: #b93c53;
+  }
+}
+
 .button {
   &:hover {
     filter: brightness(1.2);
@@ -938,6 +967,12 @@ body {
       img {
         display: flex;
       }
+    }
+  }
+
+  .swiffy-slider.slider-indicators-outside .slider-nav.carr2 {
+    &:nth-child(2) {
+      left: 70%;
     }
   }
 }
